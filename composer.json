@@ -1,0 +1,32 @@
+{
+    "name": "rulong/laravel-dingtalk",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "C.Jason",
+            "email": "chenjxlg@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "adbario/php-dot-notation": "^2.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "pimple/pimple": "^3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "RuLong\\Dingtalk": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RuLong\\Dingtalk\\Providers\\DingtalkServiceProvider"
+            ],
+            "aliases": {
+                "Dingtalk": "RuLong\\Dingtalk\\Facades\\Dingtalk"
+            }
+        }
+    }
+}
